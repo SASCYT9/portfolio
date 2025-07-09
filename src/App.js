@@ -39,10 +39,10 @@ const Portfolio = () => {
     { icon: <Coffee className="w-5 h-5" />, text: `${coffeeCount + 127} cups of coffee consumed`, dynamic: true },
     { icon: <Clock className="w-5 h-5" />, text: `Currently ${currentTime.toLocaleTimeString('uk-UA')}`, dynamic: true },
     { icon: <Activity className="w-5 h-5" />, text: `${isOnline ? 'Online' : 'Offline'} and coding`, dynamic: true },
-    { icon: <Music className="w-5 h-5" />, text: `Listening to: ${currentlyPlaying}`, dynamic: true },
-    { icon: <Gamepad2 className="w-5 h-5" />, text: 'Strategy games enthusiast', dynamic: false },
-    { icon: <Car className="w-5 h-5" />, text: 'Car performance enthusiast', dynamic: false },
-    { icon: <Book className="w-5 h-5" />, text: 'Sci-fi novels reader', dynamic: false },
+    { icon: <Music className="w-5 h-5" />, text: `Listening to: 90s classics mix`, dynamic: false },
+    { icon: <Gamepad2 className="w-5 h-5" />, text: 'Dota & cyberpunk games fan', dynamic: false },
+    { icon: <Car className="w-5 h-5" />, text: 'Car engineering enthusiast', dynamic: false },
+    { icon: <Book className="w-5 h-5" />, text: 'Python books reader', dynamic: false },
     { icon: <MapPin className="w-5 h-5" />, text: 'Based in Lutsk, Ukraine', dynamic: false }
   ];
 
@@ -490,19 +490,19 @@ const Portfolio = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Car className="w-5 h-5 text-blue-400" />
-                    <span>Car performance enthusiast - love automotive engineering</span>
+                    <span>Car engineering enthusiast - fascinated by automotive technology</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Gamepad2 className="w-5 h-5 text-purple-400" />
-                    <span>Strategy games player - chess, civilization, tactical RPGs</span>
+                    <span>Dota player & cyberpunk games fan - love strategic gameplay</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Book className="w-5 h-5 text-green-400" />
-                    <span>Sci-fi novels reader - Isaac Asimov, Philip K. Dick</span>
+                    <span>Python books reader - always expanding programming knowledge</span>
                   </div>
                   <div className="flex items-center space-x-3 text-gray-300">
                     <Music className="w-5 h-5 text-orange-400" />
-                    <span>Electronic music lover - helps me focus while coding</span>
+                    <span>90s music lover - classic hits fuel my coding sessions</span>
                   </div>
                 </div>
               </div>
