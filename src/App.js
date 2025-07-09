@@ -330,8 +330,9 @@ const Portfolio = () => {
               </h2>
               
               <p className="text-gray-300 text-lg leading-relaxed max-w-lg transform hover:scale-105 transition-transform duration-300">
-                Specializing in full-cycle Shopify development and programming education. 
-                I create stores that actually sell and teach the next generation of developers.
+                Shopify Developer & Product Manager specializing in full-cycle e-commerce development. 
+                Over 1.5 years creating dozens of projects with Liquid, JavaScript, and modern web technologies. 
+                Also experienced in programming education and Python automation.
                 <span className="block mt-2 text-green-400 font-semibold animate-pulse">
                   🟢 Available for new projects and collaborations!
                 </span>
@@ -345,13 +346,13 @@ const Portfolio = () => {
               
               <div className="flex space-x-4 pt-4">
                 <a 
-                  href="mailto:sashatsompel@gmail.com"
+                  href="mailto:sashatsompel@gmail.com?subject=Project%20Inquiry&body=Hi%20Oleksandr,%0A%0AI'm%20interested%20in%20working%20with%20you%20on%20a%20project.%0A%0AProject%20details:%0A-%20Type:%20%0A-%20Budget:%20%0A-%20Timeline:%20%0A%0APlease%20let%20me%20know%20your%20availability.%0A%0ABest%20regards"
                   className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
                 >
                   <span className="group-hover:animate-pulse">GET IN TOUCH</span>
                 </a>
                 <a
-                  href="https://sascyt9.github.io/Resume/resume-ua.html"
+                  href="https://sascyt9.github.io/Resume/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
@@ -432,23 +433,23 @@ const Portfolio = () => {
               }`}>
                 <h3 className="text-2xl font-bold text-blue-400 mb-4">Who Am I?</h3>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  I'm a passionate <span className="text-blue-400 font-semibold">Shopify Developer</span> and 
-                  <span className="text-purple-400 font-semibold"> Programming Educator</span> from Lutsk, Ukraine. 
-                  With over <span className="text-green-400 font-semibold">1.5 years</span> of experience in e-commerce development, 
-                  I've helped businesses create stores that don't just look good - they actually sell.
+                  I'm a passionate <span className="text-blue-400 font-semibold">Shopify Developer & Product Manager</span> 
+                  from Lutsk, Ukraine. With over <span className="text-green-400 font-semibold">1.5 years</span> of 
+                  experience in e-commerce development, I've created dozens of projects working with Shopify themes, 
+                  custom functionality, and store optimization.
                 </p>
                 
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Currently pursuing my <span className="text-blue-400 font-semibold">Master's degree</span> at 
-                  Igor Sikorsky Kyiv Polytechnic Institute, I combine academic knowledge with real-world experience 
-                  to deliver cutting-edge solutions.
+                  I specialize in <span className="text-blue-400 font-semibold">full-cycle Shopify store development</span> - 
+                  from creating unique themes to product catalog setup and conversion optimization. 
+                  I also teach programming and develop Python automation tools.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-gray-800/50 p-4 rounded-lg border border-blue-500/20">
-                    <h4 className="font-semibold text-blue-400 mb-2">🎓 Education</h4>
-                    <p className="text-gray-300 text-sm">Master's in Applied Physics</p>
-                    <p className="text-gray-400 text-xs">KPI, 2024-2025</p>
+                    <h4 className="font-semibold text-blue-400 mb-2">💼 Experience</h4>
+                    <p className="text-gray-300 text-sm">Freelance Developer</p>
+                    <p className="text-gray-400 text-xs">January 2024 - Present</p>
                   </div>
                   <div className="bg-gray-800/50 p-4 rounded-lg border border-purple-500/20">
                     <h4 className="font-semibold text-purple-400 mb-2">🌍 Location</h4>
@@ -742,7 +743,7 @@ const Portfolio = () => {
             
             <div className="flex flex-wrap justify-center gap-4">
               <a 
-                href="mailto:sashatsompel@gmail.com"
+                href="mailto:sashatsompel@gmail.com?subject=New%20Project%20Inquiry&body=Hi%20Oleksandr,%0A%0AI%20would%20like%20to%20start%20a%20new%20project%20with%20you.%0A%0AProject%20details:%0A-%20Type%20of%20project:%20%0A-%20Budget%20range:%20%0A-%20Expected%20timeline:%20%0A-%20Additional%20requirements:%20%0A%0APlease%20contact%20me%20to%20discuss%20further.%0A%0ABest%20regards"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
               >
                 <span className="group-hover:animate-pulse">Start a Project</span>
@@ -757,7 +758,7 @@ const Portfolio = () => {
                 <span>Quick Chat</span>
               </a>
               <a
-                href="https://sascyt9.github.io/Resume/resume-ua.html"
+                href="https://sascyt9.github.io/Resume/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
@@ -1077,7 +1078,7 @@ const Portfolio = () => {
               </div>
               
               <a
-                href="mailto:sashatsompel@gmail.com"
+                href="mailto:sashatsompel@gmail.com?subject=Let's%20Build%20Something%20Amazing!&body=Hi%20Oleksandr,%0A%0AI%20saw%20your%20portfolio%20and%20I'm%20impressed!%20Let's%20build%20something%20amazing%20together.%0A%0AProject%20idea:%20%0ABudget:%20%0ATimeline:%20%0A%0ALooking%20forward%20to%20working%20with%20you!%0A%0ABest%20regards"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl group inline-block"
               >
                 <span className="group-hover:animate-pulse">Let's Build Something Amazing!</span>
@@ -1120,7 +1121,7 @@ const Portfolio = () => {
             
             <div className="text-center">
               <a
-                href="mailto:sashatsompel@gmail.com"
+                href="mailto:sashatsompel@gmail.com?subject=Project%20Start%20Request&body=Hi%20Oleksandr,%0A%0AI%20want%20to%20start%20a%20project%20with%20you!%0A%0AProject%20type:%20%0ABudget:%20%0ATimeline:%20%0A%0ALet's%20discuss%20details.%0A%0ARegards"
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
               >
                 <span className="group-hover:animate-pulse">Start a Project</span>
