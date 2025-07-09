@@ -344,13 +344,21 @@ const Portfolio = () => {
               </div>
               
               <div className="flex space-x-4 pt-4">
-                <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group">
+                <a 
+                  href="mailto:sashatsompel@gmail.com"
+                  className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
+                >
                   <span className="group-hover:animate-pulse">GET IN TOUCH</span>
-                </button>
-                <button className="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+                </a>
+                <a
+                  href="https://sascyt9.github.io/Resume/resume-ua.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+                >
                   <Download className="w-4 h-4" />
                   <span>RESUME</span>
-                </button>
+                </a>
               </div>
 
               <div className="flex space-x-3 pt-4">
@@ -362,6 +370,8 @@ const Portfolio = () => {
                   <a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center ${social.color} transition-all duration-300 transform hover:scale-110 hover:rotate-12`}
                   >
                     {social.icon}
@@ -382,7 +392,7 @@ const Portfolio = () => {
                   visibleElements.has('hero-image') ? 'scale-100 rotate-0' : 'scale-0 rotate-45'
                 }`}>
                   <img 
-                    src="/profile-photo.jpg"
+                    src={`${window.location.origin}/portfolio/profile-photo.jpg`}
                     alt="Oleksandr Tsompel" 
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
@@ -726,16 +736,29 @@ const Portfolio = () => {
             </div>
             
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group">
+              <a 
+                href="mailto:sashatsompel@gmail.com"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
+              >
                 <span className="group-hover:animate-pulse">Start a Project</span>
-              </button>
-              <button className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+              </a>
+              <a
+                href="https://calendly.com/sascyt9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+              >
                 Schedule a Call
-              </button>
-              <button className="bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2">
+              </a>
+              <a
+                href="https://sascyt9.github.io/Resume/resume-ua.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
+              >
                 <Download className="w-4 h-4" />
                 <span>Download CV</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1047,9 +1070,12 @@ const Portfolio = () => {
                 <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
               </div>
               
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl group">
+              <a
+                href="mailto:sashatsompel@gmail.com"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-10 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl group inline-block"
+              >
                 <span className="group-hover:animate-pulse">Let's Build Something Amazing!</span>
-              </button>
+              </a>
               
               <p className="text-sm text-gray-400 mt-4">
                 💬 Free consultation • 📧 Quick response • 🚀 Quality guaranteed
@@ -1082,9 +1108,12 @@ const Portfolio = () => {
             </div>
             
             <div className="text-center">
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group">
+              <a
+                href="mailto:sashatsompel@gmail.com"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg group inline-block"
+              >
                 <span className="group-hover:animate-pulse">Start a Project</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1121,9 +1150,12 @@ const Portfolio = () => {
       </footer>
 
       {/* Floating Action Button */}
-      <button className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40 group">
+      <a
+        href="mailto:sashatsompel@gmail.com"
+        className="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 z-40 group"
+      >
         <Mail className="w-6 h-6 text-white group-hover:animate-bounce" />
-      </button>
+      </a>
 
       {/* Scroll Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-800 z-50">
