@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { Mail, Phone, Github, Linkedin, ExternalLink, Code, Palette, Users, Zap, Download, Star, Clock, MapPin, Coffee, Gamepad2, Car, Book, Music, Activity } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, ExternalLink, Code, Palette, Users, Zap, Download, Star, Clock, MapPin, Coffee, Gamepad2, Car, Book, Music, Activity, MessageCircle } from 'lucide-react';
 
 const Portfolio = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -363,18 +363,23 @@ const Portfolio = () => {
 
               <div className="flex space-x-3 pt-4">
                 {[
-                  { icon: <Github className="w-5 h-5" />, href: "https://github.com/SASCYT9", color: "hover:bg-gray-700" },
-                  { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/oleksandr-tsompel", color: "hover:bg-blue-600" },
-                  { icon: <Mail className="w-5 h-5" />, href: "mailto:sashatsompel@gmail.com", color: "hover:bg-red-600" }
+                  { icon: <Github className="w-5 h-5" />, href: "https://github.com/SASCYT9", color: "hover:bg-gray-700", label: "GitHub" },
+                  { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/oleksandr-tsompel", color: "hover:bg-blue-600", label: "LinkedIn" },
+                  { icon: <MessageCircle className="w-5 h-5" />, href: "https://t.me/sascyt", color: "hover:bg-blue-500", label: "Telegram" },
+                  { icon: <Mail className="w-5 h-5" />, href: "mailto:sashatsompel@gmail.com", color: "hover:bg-red-600", label: "Email" }
                 ].map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center ${social.color} transition-all duration-300 transform hover:scale-110 hover:rotate-12`}
+                    className={`w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center ${social.color} transition-all duration-300 transform hover:scale-110 hover:rotate-12 group relative`}
+                    title={social.label}
                   >
                     {social.icon}
+                    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                      {social.label}
+                    </span>
                   </a>
                 ))}
               </div>
@@ -743,12 +748,13 @@ const Portfolio = () => {
                 <span className="group-hover:animate-pulse">Start a Project</span>
               </a>
               <a
-                href="https://calendly.com/sascyt9"
+                href="https://t.me/sascyt"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+                className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
               >
-                Schedule a Call
+                <MessageCircle className="w-4 h-4" />
+                <span>Quick Chat</span>
               </a>
               <a
                 href="https://sascyt9.github.io/Resume/resume-ua.html"
@@ -1094,11 +1100,16 @@ const Portfolio = () => {
           </div>
           
           <div className="max-w-2xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
               <div className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 group">
                 <Mail className="w-8 h-8 text-blue-400 mb-4 group-hover:animate-bounce" />
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
                 <p className="text-gray-300">sashatsompel@gmail.com</p>
+              </div>
+              <div className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 group">
+                <MessageCircle className="w-8 h-8 text-blue-400 mb-4 group-hover:animate-bounce" />
+                <h3 className="text-xl font-semibold mb-2">Telegram</h3>
+                <p className="text-gray-300">@sascyt</p>
               </div>
               <div className="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 group">
                 <Phone className="w-8 h-8 text-blue-400 mb-4 group-hover:animate-bounce" />
@@ -1132,14 +1143,18 @@ const Portfolio = () => {
             </div>
             <div className="flex space-x-4">
               {[
-                { icon: <Github className="w-5 h-5" />, href: "https://github.com/SASCYT9" },
-                { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/oleksandr-tsompel" },
-                { icon: <Mail className="w-5 h-5" />, href: "mailto:sashatsompel@gmail.com" }
+                { icon: <Github className="w-5 h-5" />, href: "https://github.com/SASCYT9", label: "GitHub" },
+                { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/oleksandr-tsompel", label: "LinkedIn" },
+                { icon: <MessageCircle className="w-5 h-5" />, href: "https://t.me/sascyt", label: "Telegram" },
+                { icon: <Mail className="w-5 h-5" />, href: "mailto:sashatsompel@gmail.com", label: "Email" }
               ].map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-300 hover:text-blue-400 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
+                  title={social.label}
                 >
                   {social.icon}
                 </a>
